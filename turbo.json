@@ -5,7 +5,6 @@
     "build": {
       "dependsOn": ["^build"],
       "env": [
-        "\\*",
         "RESEND_API_KEY",
         "\\!NEXT_PUBLIC_GIT_\\*",
         "DATABASE_URL",
@@ -20,7 +19,9 @@
         "UNKEY_API_ID",
         "UPSTASH_REDIS_REST_URL",
         "UPSTASH_REDIS_REST_TOKEN",
-        "EXTERNAL_API_URL"
+        "EXTERNAL_API_URL",
+        "OPENPANEL_CLIENT_SECRET",           // ADD THIS
+        "NEXT_PUBLIC_OPENPANEL_CLIENT_ID"    // ADD THIS
       ],
       "outputs": [".next/**", "!.next/cache/**", "dist/**"]
     },
